@@ -56,8 +56,9 @@ def tokenize(codes):
                     if var_token:
                         cur.append(var_token)
                     else:
+                        output.clear()
                         return [False, i + 1]
-        output.append(cur)
+        output.append({"line": i+1, "token": cur})
     return output
 
 if __name__ == "__main__":
@@ -74,8 +75,8 @@ if __name__ == "__main__":
         for item in result:
             print(item)
 
-# Example output (with no error)
-# ['LET', 'VAR_P', 'EQ', 'TRUE']
-# ['LET', 'VAR_Q', 'EQ', 'FALSE']
-# ['LET', 'VAR_R', 'EQ', 'L_PAREN', 'NOT', 'L_PAREN', 'L_PAREN', 'NOT', 'VAR_P', 'R_PAREN', 'AND', 'VAR_Q', 'R_PAREN', 'R_PAREN']
-# ['IF', 'VAR_R', 'THEN', 'PRINT', 'VAR_P']
+# Example output
+# {'line': 1, 'token': ['LET', 'VAR_P', 'EQ', 'TRUE']}
+# {'line': 2, 'token': ['LET', 'VAR_Q', 'EQ', 'FALSE']}
+# {'line': 3, 'token': ['LET', 'VAR_R', 'EQ', 'L_PAREN', 'NOT', 'L_PAREN', 'L_PAREN', 'NOT', 'VAR_P', 'R_PAREN', 'AND', 'VAR_Q', 'R_PAREN', 'R_PAREN']}
+# {'line': 4, 'token': ['IF', 'VAR_R', 'THEN', 'PRINT', 'VAR_P']}
