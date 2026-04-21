@@ -1,0 +1,6 @@
+let a = T
+let b = F
+let c = T
+let d = (NOT (NOT a))
+let e = ((a IMPLIES b) IMPLIES ((NOT c) OR (d AND a)))
+if ((NOT ((a AND b) OR (NOT c))) OR ((a IMPLIES b) AND (d OR (NOT b)))) then let z = (((a AND (b OR c)) OR ((NOT a) AND c)) IMPLIES (NOT (NOT d)))

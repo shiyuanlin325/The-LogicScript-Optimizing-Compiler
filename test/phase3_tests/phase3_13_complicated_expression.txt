@@ -1,0 +1,4 @@
+let a = T
+let b = F
+let c = T
+if ((((a AND b) OR (c AND a)) OR T) IMPLIES b) then print a

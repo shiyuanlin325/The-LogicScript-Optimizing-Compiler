@@ -1,0 +1,1 @@
+let p = (NOT ((NOT q) AND r))

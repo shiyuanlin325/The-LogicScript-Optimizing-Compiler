@@ -1,0 +1,3 @@
+let x = (p AND q)
+let y = (p OR F)
+let z = (p IMPLIES q)

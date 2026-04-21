@@ -1,0 +1,3 @@
+let p = T
+if (p AND ) then print p
+print p
