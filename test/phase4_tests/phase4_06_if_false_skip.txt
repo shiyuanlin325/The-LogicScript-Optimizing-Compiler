@@ -1,0 +1,1 @@
+[{"line": 1, "ast": ["LET", "VAR_F", "FALSE"]}, {"line": 2, "ast": ["IF", "VAR_F", ["PRINT", "VAR_F"]]}]

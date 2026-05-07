@@ -1,0 +1,2 @@
+let p = (((a AND b) OR ((NOT a) AND c)) OR (b AND c))
+let q = (((a OR b) AND ((NOT a) OR c)) AND (b OR c))

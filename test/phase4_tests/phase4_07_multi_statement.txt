@@ -1,0 +1,1 @@
+[{"line": 1, "ast": ["LET", "VAR_G", "TRUE"]}, {"line": 2, "ast": ["LET", "VAR_H", ["NOT", "VAR_G"]]}, {"line": 3, "ast": ["PRINT", "VAR_G"]}, {"line": 4, "ast": ["PRINT", "VAR_H"]}]

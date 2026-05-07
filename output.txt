@@ -1,52 +1,3 @@
-# The LogicScript Optimizing Compiler
-
-## 1. Project Overview
-
-This project implements a four-phase optimizing compiler for a custom micro-language called **LogicScript**.
-
-The compiler is designed to:
-
-1. read a LogicScript source file,
-2. perform lexical analysis,
-3. validate syntax and generate an Abstract Syntax Tree (AST),
-4. optimize logical expressions,
-5. verify optimization correctness,
-6. execute the optimized program,
-7. export the full pipeline trace as a JSON file.
-
-The project is based on the specification in **Project 1: The LogicScript Optimizing Compiler**.
-
----
-
-## 2. Final Submission Format
-
-The final submission is centered on **one main Python file**:
-
-logic_compiler.py
-
----
-
-## 3. Execution Guide
-
-If your input file and output file are input.txt and ouput.json.
-You can run this compiler using this command:
-
-`python3 logic_compiler.py input.txt output.json`
-
----
-
-## 4. Example input & output
-
-**input.txt**:
-```
-let p = T
-let q = F
-let r = (NOT ((NOT p) AND q))
-if r then print p
-```
-
-**output.json**:
-```
 {
   "phase_1_lexer": [
     {
@@ -224,4 +175,3 @@ if r then print p
     ]
   }
 }
-```

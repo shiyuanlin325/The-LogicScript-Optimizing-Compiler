@@ -1,0 +1,1 @@
+[{"line": 1, "ast": ["IF", "VAR_INVALID", ["LET", "VAR_T", "TRUE"]]}]
